@@ -23,6 +23,10 @@ destroyKey(key)
 ### `destroyKey(secureBuf)`
 
 `secureBuf` must be a Secure Buffer created with `sodium-native@2.4` or greater.
+It can also be a primitive object with some of the following properties (eg.
+in case of a key pair): `private`, `secret`, `privateKey`, `secretKey`,
+`public`, `publicKey`, `identity` or `identityKey`, which in turn will be called
+with `destroyKey`
 
 Destroying the `secureBuf` will safely wipe the key from memory and mark it for
 `noaccess`, to prevent any accidental misuse.
