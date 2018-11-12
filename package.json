@@ -1,6 +1,6 @@
 {
   "name": "secure-destroy-key",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Destroy a Secure Buffer key safely",
   "main": "index.js",
   "dependencies": {
